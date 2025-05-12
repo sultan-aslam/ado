@@ -1,0 +1,42 @@
+.awardSection {
+  display: block;
+}
+
+.suggestionSection {
+  display: none;
+}
+
+.categoriesSection {
+  display: block;
+}
+.mobileCaregories {
+  display: none;
+}
+.banner {
+  display: block;
+}
+.mobileBanner {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    display: none;
+  }
+  .mobileBanner {
+    display: block;
+  }
+  .categoriesSection {
+    display: none;
+  }
+  .mobileCaregories {
+    display: block;
+  }
+
+  .awardSection {
+    display: none;
+  }
+
+  .suggestionSection {
+    display: block;
+  }
+}

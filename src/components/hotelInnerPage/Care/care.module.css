@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.47999998927116394px;
+  text-align: left;
+  margin-top: 21px;
+}
+
+.careType {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.icon {
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+.line {
+  border: 1px solid var(--primary);
+  margin-top: 21px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    margin-top: 24px;
+  }
+}

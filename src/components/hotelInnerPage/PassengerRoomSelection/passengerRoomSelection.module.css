@@ -1,0 +1,70 @@
+.filterContainer {
+  display: flex;
+  border-radius: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter {
+  display: flex;
+  border-radius: 50px;
+  width: 200px;
+  flex-direction: column;
+}
+
+.travelCompanyFilter {
+  display: flex;
+  border-radius: 50px;
+  width: 190px;
+  flex-direction: column;
+}
+.filterHeadingMain {
+  font-size: 16.23px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.filterHeading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+.filterHeadingx{
+  visibility: hidden;
+}
+@media (width <= 768px) {
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+    background: #f15a241a;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e1e1e;
+    padding: 5px;
+  }
+
+  .Pakket {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .Alleen {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .filter {
+    display: flex;
+    border-radius: 50px;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+  }
+}

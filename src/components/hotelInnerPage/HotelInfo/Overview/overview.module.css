@@ -1,0 +1,115 @@
+.hotelOveriewSection {
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.hotelOverview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hotelOverviewRecommendation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileOverviewCard {
+  display: none;
+}
+
+.desktopOverviewCard {
+  display: block;
+}
+
+@media screen and (max-width: 1025px) {
+  .desktopOverviewCard {
+    display: none;
+  }
+}
+@media screen and (max-width: 728px) {
+  .hotelOverview {
+    width: 100%;
+  }
+
+  .hotelOverviewRecommendation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileOverviewCard {
+    display: block;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  .mobileOverviewCard {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 978px) {
+  .hotelOverview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hotelOverviewRecommendation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .mobileOverviewCard {
+    display: block;
+  }
+}
+@media only screen and (min-width: 729px) and (max-width: 800px) {
+  .hotelOverview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hotelOverviewRecommendation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .mobileOverviewCard {
+    display: block;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 728px) {
+  .hotelOveriewSection {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hotelOveriewSection {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hotelOveriewSection {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hotelOveriewSection {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.selectFixedWidth {
+  width: 200px;
+}
+
+.childAgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.childAgeSelect {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8px);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 45px;
+  right: -80px;
+  width: 440px;
+  border-radius: 5px;
+}
+
+.modalCotainer :global(.ant-modal .ant-modal-content) {
+  padding: 0px !important;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.adultsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.adultsTitle {
+  font-size: 16.23px;
+  font-weight: 600;
+  color: #4a4a4a;
+  align-content: center;
+}
+
+.childrensContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.ageRange {
+  font-size: 14.43px;
+  font-weight: 400;
+}
+
+.doneBtn {
+  font-size: 14px;
+  font-weight: 700;
+  height: 36px;
+  margin-top: 15px;
+  background-color: rgba(0, 170, 37, 1) !important;
+}
+
+.childAgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (width <= 600px) {
+  .adultsContainer {
+    flex-direction: column;
+  }
+  .selectFixedWidth {
+    width: 100%;
+  }
+  .childrensContainer {
+    flex-direction: column;
+    margin-top: 0px !important;
+  }
+  .wrapper {
+    position: unset;
+    padding: 0px !important;
+    border: unset;
+    box-shadow: unset;
+    width: -webkit-fill-available;
+  }
+  .container {
+    padding: unset;
+  }
+  .doneBtn {
+    margin-top: 5px;
+  }
+}

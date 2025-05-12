@@ -1,0 +1,123 @@
+.selectWrapper {
+  position: relative !important;
+}
+
+.destinationPage {
+  border: 1px solid #f15a24;
+}
+
+.hotelInnerWrapper {
+  border-radius: 50px;
+}
+
+.hiddenDropdown {
+  display: none !important;
+}
+
+.prefixIconWrapper {
+  position: absolute !important;
+  z-index: 1 !important;
+  width: 2rem !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.iconInnerWrapper {
+  position: absolute !important;
+  z-index: 1 !important;
+  width: 2rem !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  /* margin-left: 5px; */
+}
+
+.selectWrapper :global(.ant-select-selection-item) {
+  margin-left: 10px;
+  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.selectWrapper :global(.ant-select-selection-placeholder) {
+  margin-left: 5px;
+  color: black;
+}
+
+.customeTravelCompany :global(.ant-select-selection-item) {
+  margin-left: 10px;
+  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.customTravelCompany :global(.ant-select-selection-placeholder) {
+  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.select,
+.ant-select-selection-selector,
+.ant-select-selection-item {
+  padding-left: 20px !important;
+  width: 100% !important;
+  border-radius: 4px !important;
+}
+
+.ant-select-selection-placeholder .prefixIconWrapper,
+.ant-select-selection-item .prefixIconWrapper {
+  left: 8px !important;
+}
+
+.customTravelCompany {
+  border-radius: 50px;
+  border: 1px solid #01b6ca !important;
+}
+
+.customTravelCompany :global(.ant-select-selector) {
+  border: none !important;
+  background: none !important;
+}
+
+.customStyleWrapper {
+  border-radius: 50px;
+  border: 2px solid #01b6ca !important;
+}
+
+.customStyleWrapper :global(.ant-select-selector) {
+  border: none !important;
+  background: none !important;
+}
+
+.travelCompany,
+.travelCompany .ant-select-selection-selector,
+.customSelect .ant-select-selection-item .ant-select-selector {
+  border: none !important;
+  padding-left: 10px !important;
+  width: 100% !important;
+  border-radius: 50px !important;
+}
+
+.customSelect {
+  border: none !important;
+  padding-left: 20px !important;
+  width: 100% !important;
+  border-radius: 50px !important;
+}
+
+.hotelInnerWrapper :global(.ant-select-selection-placeholder) {
+  color: #808080 !important;
+  font-size: 16.36px !important;
+  font-weight: 400 !important;
+}
+@media (max-width: 799px) {
+  .selectWrapper {
+    border: 1px solid #000 !important;
+    border-radius: 24px !important;
+  }
+  
+}

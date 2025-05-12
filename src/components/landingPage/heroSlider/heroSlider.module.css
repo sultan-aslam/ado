@@ -1,0 +1,80 @@
+.slickContainer :global(.slick-active) {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.slickContainer :global(.slick-active) > div:first-child {
+  width: 550px;
+}
+
+.slick {
+  position: relative;
+}
+
+.slider {
+  width: 700px;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  padding: 8px;
+  top: 33%;
+  right: 8px;
+  cursor: pointer;
+}
+
+.prev {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  padding: 8px;
+  top: 33%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mx10 {
+  margin: 0px 10px;
+}
+
+.name,
+.places {
+  font-size: 12.22px;
+  font-weight: 400;
+  color: #a3a3a3;
+  text-align: center;
+}
+.places {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+  .slider {
+    width: 500px;
+  }
+  .slickContainer :global(.slick-active) {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .slickContainer :global(.slick-active) > div:first-child {
+    width: 390px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 899px) {
+  .slider {
+    width: 630px;
+  }
+  .slickContainer :global(.slick-active) {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .slickContainer :global(.slick-active) > div:first-child {
+    width: 500px;
+  }
+}

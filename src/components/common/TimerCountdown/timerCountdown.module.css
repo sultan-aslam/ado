@@ -1,0 +1,105 @@
+.timerContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.countdown {
+  background-color: white;
+  color: var(--primary);
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hotelNavbar {
+  background-color: var(--primary);
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+}
+
+.hotelOveriewScoreCard {
+  background-color: var(--tertiary);
+  padding: 6px;
+  display: flex;
+  gap: 12px;
+  border-radius: 2px;
+}
+
+.hotelTimerLeft {
+  width: 85px;
+  height: 40px;
+  color: white;
+  background-color: var(--secondary);
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.9599999785423279px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.hotelTimerLeftDestination {
+  width: 90px;
+  height: 40px;
+  color: white;
+  background-color: var(--secondary);
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.9599999785423279px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.hotelTimerRight {
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hotelTimerRightDestination {
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hotelNavbarTimerRight {
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hotelTimerHeading {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.9599999785423279px;
+  text-align: left;
+}

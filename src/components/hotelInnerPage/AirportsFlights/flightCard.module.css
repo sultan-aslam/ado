@@ -1,0 +1,365 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 0 7px;
+  gap: 10px;
+  width: 100%;
+}
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.flightDetailsContainer {
+  width: 100%;
+  text-align: center;
+  padding-left: 60px;
+}
+.outward {
+  margin: 10px 0;
+  background-color: #f15a24;
+  color: white;
+  font-size: 16px;
+  width: 210px;
+  height: 36px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+
+  font-weight: 600;
+}
+.container2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  margin: 25px 0px;
+  border: 1px solid #cccccc !important;
+  position: relative;
+}
+.locationDiv {
+  color: #028e00;
+  font-size: 18.41px;
+  font-weight: 600;
+}
+.outwardText {
+  font-size: 18.41px;
+  font-weight: 600;
+}
+.outwardText2 {
+  visibility: hidden;
+  font-size: 18.41px;
+  font-weight: 600;
+}
+.wrapper {
+  padding-left: 40px;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+  /* gap: 30px; */
+}
+
+.imageContainer {
+  display: flex;
+  margin-top: 12px;
+  /* align-items: center; */
+  height: 100px;
+}
+
+.flights {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.flight {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.timingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.airport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0px;
+  width: 75%;
+}
+
+.timing {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  width: 100%;
+}
+
+.takeOfTime {
+  font-size: 15.43px;
+  font-weight: 600;
+  line-height: 25.54px;
+  text-align: right;
+  color: #4a4a4a;
+}
+
+.landingTime {
+  font-size: 15.56px;
+  line-height: 25.54px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.heen {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #f15a24;
+  /* border-bottom: 1.06px solid #DBDBDB; */
+}
+
+.lineHeen {
+  width: 90px;
+  margin-top: 2px;
+  height: 1px;
+  background-color: #dbdbdb;
+  border: none;
+}
+
+.directFlight {
+  font-size: 12px;
+  font-weight: 600;
+  color: #028e00;
+  text-align: center;
+
+  /* width: 100px;
+    margin-top: 2px;
+    color: #dbdbdb; */
+}
+
+.lineDirectFlight {
+  width: 170px;
+  margin-top: 5px;
+  height: 1px;
+  background-color: #dbdbdb;
+  border: none;
+}
+.airports {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.airline {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+  margin-top: 5px;
+}
+
+.flightNumber {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+  margin-top: 5px;
+}
+
+.airlineContainer {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 15px;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.divider {
+  width: 1px;
+  background-color: #dbdbdb;
+  border: none;
+  margin: 10px 20px 10px 0px;
+}
+
+.tags {
+  /* width: 25%;
+    margin-top: 5px; */
+  /* margin-left: -100px; */
+  display: flex;
+  flex-direction: column;
+}
+.tagsP{
+  font-weight: 600;
+  color: red;
+}
+.tag1 {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #d8ebe8;
+  color: #255d53;
+}
+
+.tag2 {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #ffe2d4;
+  color: #994317;
+}
+
+.selected {
+  border: 2px solid var(--primary); /* Adjust the border color as needed */
+}
+.radio {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .flight {
+    width: 100%;
+    /* background-color: red; */
+  }
+  /* .tags {
+      width: 5%;
+    } */
+  .container {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    /* transition: border-color 0.3s ease; */
+  }
+  .tag1 {
+    font-size: 8px;
+    font-weight: 600;
+    background-color: #d8ebe8;
+    color: #255d53;
+  }
+
+  .tag2 {
+    font-size: 8px;
+    font-weight: 600;
+    background-color: #ffe2d4;
+    color: #994317;
+  }
+}
+@media screen and (max-width: 600px) {
+  .outward{
+    display: none;
+  }
+  .imageContainer {
+    margin-right: 5px;
+  }
+  .radio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 5%;
+    position: absolute;
+    top: 65px;
+    margin-top: 16px;
+    left: 10px;
+  }
+  .flightDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .tags {
+    position: absolute;
+    right: 0px;
+    width: 85px;
+  }
+  .wrapper {
+    padding-left: 0;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 7px;
+    gap: 10px;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag1,
+  .tag2 {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .takeOfTime {
+    font-size: 10px;
+    font-weight: 600;
+    color: #4a4a4a;
+  }
+  .tagsP{
+    font-size: 13px;
+  }
+  .airports {
+    font-size: 10px;
+    font-weight: 400;
+    color: #4a4a4a;
+  }
+  .heen {
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    color: #f15a24;
+  }
+  .lineHeen {
+    width: 40px;
+    margin-top: 2px;
+    color: #dbdbdb;
+    border: none;
+    height: 1px;
+  }
+  .landingTime {
+    font-size: 10px;
+    font-weight: 600;
+    color: #4a4a4a;
+    align-content: center;
+  }
+  .timing {
+    display: flex;
+    justify-content: unset !important;
+    gap: 10px !important;
+    width: 100%;
+  }
+  .directFlight {
+    font-size: 8px;
+    font-weight: 600;
+    color: #028e00;
+    text-align: center;
+  }
+  .lineDirectFlight {
+    width: 100px;
+    margin-top: 5px;
+    height: 0.2px !important;
+    background-color: #fffdfd;
+  }
+}

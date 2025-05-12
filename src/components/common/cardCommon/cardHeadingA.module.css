@@ -1,0 +1,96 @@
+.cardAHeadingSection {
+  flex: 1;
+  padding-bottom: 10px;
+  border-bottom: 0.1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cardAHeadingNameSection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cardATitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+.cardATitle {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  /* width: 70%; */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  display: flex;
+  font-size: 14px;
+  color: #ffbf2b;
+}
+
+.rating > * {
+  margin-inline-end: 2px !important ;
+}
+
+.cardARating {
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 14px;
+  color: #028e00;
+}
+
+.cardARatingText {
+  color: var(--text-color);
+}
+
+.cardAHeadingPlace {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cardAPaceName {
+  color: #a8a8a8;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .cardAPaceName {
+    color: var(--grey-color);
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rating {
+    font-size: 14px;
+    color: #ffbf2b;
+  }
+  .cardARating {
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 14px;
+    color: #028e00;
+  }
+}

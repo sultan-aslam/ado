@@ -1,0 +1,135 @@
+.datePickerWrapper {
+  position: relative;
+  width: 100%;
+  /* padding-top: 5px; */
+  cursor: pointer;
+}
+
+.datePickerWrapperDestination {
+  border: 1px solid #f15a24;
+}
+
+.customStyleWrapper {
+  border-radius: 50px;
+  border: 2px solid #01b6ca !important;
+}
+.customStyleWrapperS {
+  border-radius: 0px !important;
+}
+.customStyleWrapperS :global(.ant-picker-outlined) {
+  border-radius: 0px !important;
+  border: none;
+}
+
+.customStyleWrapper :global(.ant-picker-outlined) {
+  border-radius: 50px;
+  border: none;
+  /* border: 1px solid #01b6ca !important; */
+}
+
+.datePickerWrapper :global(.ant-picker) {
+  border-radius: 50px;
+}
+
+.datePickerWrapper :global(.ant-picker-suffix) {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: #000000;
+}
+
+.datePickerWrapper :global(.ant-picker-large) {
+  padding: 9px 11px 9px !important;
+}
+
+.datePickerWrapper :global(.ant-picker-outlined:focus) {
+  border-color: 1px solid #8c8a9e;
+}
+
+.datePickerWrapper :global(.ant-picker-outlined:hover) {
+  border-color: #ced4da !important;
+}
+.ant-picker-cell-inner {
+  width: fit-content !important;
+}
+.label {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 16px !important;
+  color: #999;
+  z-index: 99;
+}
+
+.labelLandingPage {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 16px !important;
+  font-weight: 400;
+  color: #8c8a9e;
+  z-index: 99;
+}
+
+.prefixIcon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datePicker {
+  width: 100%;
+}
+
+.datePickerWrapper :global(.ant-picker-input > input) {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #353131 !important;
+}
+.customStyleWrapperS :global(.ant-picker-input > input) {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.datePicker > div > input {
+  color: #353131 !important;
+}
+.customStyleWrapper .datePicker > div:first-child {
+  color: #353131 !important;
+  margin-left: 25px !important;
+}
+.customStyleWrapperS .datePicker > div:first-child {
+  color: #353131 !important;
+}
+
+.datePicker > div:first-child {
+  color: #353131 !important;
+}
+
+.datePickerWrapper input::placeholder {
+  color: #353131 !important;
+  font-weight: 400;
+  font-size: 16px !important;
+}
+
+.datePickerWrapperDestination :global(.ant-picker-input) > input {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #353131 !important;
+}
+@media screen and (max-width: 728px) {
+  .ant-picker-dropdown.ant-picker-dropdown-hidden.css-dev-only-do-not-override-1gofz11.ant-picker-dropdown-placement-bottomRight {
+    inset: 1967.77px auto auto 16px !important;
+    width: 230px !important;
+    min-width: 200px !important;
+  }
+}

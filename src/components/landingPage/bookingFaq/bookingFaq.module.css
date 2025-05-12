@@ -1,0 +1,52 @@
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--black-color);
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  color: var(--primary);
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+@media screen and (min-width: 424px) and (max-width: 500px) {
+  .heading {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .heading {
+    font-size: 24px;
+  }
+  .listContainer {
+    margin: 15px 15px 0px 15px;
+  }
+  .label {
+    font-size: 18px;
+  }
+}

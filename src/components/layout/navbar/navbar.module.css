@@ -1,0 +1,315 @@
+.navbarContainer {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 1440px;
+  gap: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.FloatingWindow__Container-sc-ef30a58d-0 {
+  border: 1px solid #000 !important;
+  opacity: 1 !important;
+}
+
+.skeletonLink {
+  margin-right: 15px;
+  height: 30px;
+  width: 100px;
+}
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+  height: 50px;
+}
+
+.imageContainerBooking {
+  position: relative;
+  height: 50px;
+}
+
+.customImage {
+  position: absolute;
+  height: 100% !important;
+  width: unset !important;
+}
+
+.dropDownList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.dropDownList a {
+  padding: 5px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropDownList a:hover {
+  color: #f15a24;
+}
+
+.linksContainer {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.active {
+  color: var(--primary);
+}
+
+.rightLinksContainer {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchIcon {
+  font-size: 18px;
+}
+
+.iconArrow {
+  margin-top: 5px;
+}
+
+.rightIcon,
+.profileIconContainer {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.profileIconContainer {
+  position: relative;
+}
+
+.profileIconContainer:hover .dropDownOptions {
+  display: block;
+}
+
+.dropDownOptions {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+
+.text {
+  display: none;
+}
+
+.showText {
+  display: none;
+}
+
+.showTextLogin {
+  display: none;
+}
+
+.contactIcon {
+  display: none;
+}
+
+.mobOptions {
+  position: relative;
+}
+
+.mobOptions:hover > .dropDownOptionsMob {
+  display: block;
+}
+
+.dropDownOptionsMob {
+  position: absolute;
+  right: 1px;
+  display: none;
+  z-index: 1000000;
+}
+
+.linksMobContainer {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logoutBtn {
+  all: unset;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .imageContainer {
+    height: 40px;
+  }
+
+  .rightLinksContainer {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbarContainer {
+    gap: 5px;
+    padding-left: 15px;
+  }
+
+  .linksContainer {
+    display: none;
+  }
+
+  .mobOptions {
+    display: flex;
+  }
+
+  .profileIconContainer {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .navbarContainer {
+    gap: 5px;
+  }
+
+  .linksContainer {
+    gap: 10px;
+  }
+
+  .profileIconContainer {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .imageContainer {
+    height: 25px;
+  }
+
+  .rightLinksContainer {
+    flex: 2;
+  }
+
+  .linksContainer {
+    display: none;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .rightIcon {
+    flex-direction: column;
+  }
+
+  .text {
+    display: block;
+    font-size: 9px;
+    font-weight: 400;
+    color: #6e6e6e;
+  }
+
+  .showTextLogin {
+    display: none;
+  }
+
+  .showText {
+    display: none;
+  }
+
+  .profileIcon {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .contactIcon {
+    font-size: 20px;
+    display: block;
+  }
+
+  .favoriteIcon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 729px) {
+  .favoriteIcon {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .linksContainer {
+    display: flex;
+  }
+
+  .mobOptions {
+    display: none;
+  }
+
+  .link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .favoriteIcon {
+    display: flex;
+  }
+
+  .showTextLogin {
+    display: block !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .showText {
+    display: block !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .showTextLogin {
+    display: block !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .showText {
+    display: block !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+}

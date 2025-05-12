@@ -1,0 +1,123 @@
+.accordion {
+  padding: 40px 0px;
+}
+
+.container {
+  display: flex;
+}
+.leftSection {
+  width: 25%;
+  background: #fbcebd;
+  display: flex;
+  justify-content: center;
+  padding: 40px 30px;
+}
+
+.leftSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.rightSection {
+  width: 75%;
+  border-left: none;
+  border-radius: 0;
+  background-color: unset;
+}
+
+.content {
+  color: #262626;
+  font-size: 28.67px;
+  font-weight: 700;
+  line-height: 38.23px;
+  text-align: left;
+}
+
+.whatsappChat {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f15a24;
+}
+
+.rightSection :global(.ant-collapse-header) {
+  height: 68px;
+  align-items: center !important;
+  font-weight: 700;
+}
+
+.rightSection :global(.ant-collapse) {
+  background-color: unset !important;
+}
+
+.rightSection .ant-collapse-item .ant-collapse-header .ant-collapse-header-text {
+  font-size: 19.11px;
+  font-weight: 700;
+  line-height: 28.67px;
+  text-align: left;
+}
+
+.bookingSection {
+  display: none;
+}
+
+.rightSectionBooking {
+  width: 90%;
+  border: none;
+  border-radius: 0;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28.67px;
+  text-align: left;
+  color: #262626;
+  background-color: white;
+}
+
+.rightSectionBooking :global(.ant-collapse-header) {
+  padding: 5px 0px !important;
+  color: #262626;
+  line-height: 1.5714285714285714;
+  cursor: pointer;
+  transition:
+    all 0.3s,
+    visibility 0s;
+  font-size: 16.11px;
+  font-weight: 600;
+  line-height: 28.67px;
+  text-align: left;
+}
+
+/* .rightSectionBooking
+  .ant-collapse-item
+  .ant-collapse-header
+  .ant-collapse-header-text {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 5px 0px;
+  color: rgba(0, 0, 0, 0.88);
+  line-height: 1.5714285714285714;
+  cursor: pointer;
+  transition: all 0.3s, visibility 0s;
+  font-size: 19.11px;
+  padding: 5px 0px;
+  font-weight: 700;
+  line-height: 28.67px;
+  text-align: left;
+} */
+
+@media screen and (max-width: 728px) {
+  .container {
+    flex-direction: column;
+  }
+  .leftSection {
+    width: 100%;
+  }
+  .rightSection {
+    width: 100%;
+    border: none;
+  }
+}

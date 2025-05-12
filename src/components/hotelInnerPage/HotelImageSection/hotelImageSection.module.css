@@ -1,0 +1,273 @@
+.fullSlider {
+  position: absolute;
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.prev {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  top: 33%;
+  left: 4px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next {
+  height: 62px;
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  top: 33%;
+  right: 0px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.imageCountMobile {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #00b6ca96;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.imageTagMobile {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary);
+  color: white;
+  padding: 2px 20px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  z-index: 100;
+  border-radius: 50px;
+}
+
+.imagesQty {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.qty {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.imgContainer {
+  position: relative;
+  flex: 10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  color: var(--white-color);
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--white-color);
+  font-size: 36px;
+  font-weight: bold;
+  padding: 50px;
+  cursor: pointer;
+}
+
+.extraImagesOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.extraImagesCount {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.slick {
+  position: relative;
+  height: 200px;
+}
+
+.zoomIcon {
+  z-index: 999;
+  position: absolute;
+  top: 42%;
+  left: 43%;
+}
+.imageSection {
+  display: block;
+}
+.mobileSlider {
+  display: none;
+}
+.slider-container{
+  overflow: hidden !important;
+}
+.para{
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  color: white;
+  font-weight: bold;
+  padding: 6px 25px;
+  text-align: center;
+   
+}
+.heroImagesContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.heroLeftImages {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex: 1.2;
+}
+
+.heroLeftImage {
+  position: relative;
+  height: 150px;
+  width: 100%;
+}
+
+.heroMainImageContainer {
+  position: relative;
+  overflow: hidden;
+  flex: 3;
+}
+
+.heroMainImageFlag {
+  position: absolute;
+  top: 18%;
+  left: -42%;
+  z-index: 99;
+  rotate: -50deg;
+  background-color: var(--primary);
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+}
+.heroMainImageFlagMob {
+  position: absolute;
+  top: 18%;
+  left: -42%;
+  z-index: 99;
+  overflow: hidden !important;
+  rotate: -50deg;
+  background-color: var(--primary);
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+}
+.heroMainImageOverlay{
+  position: absolute;
+  top: 12%;
+  right: 3%;
+  z-index: 99;
+  background-color: var(--primary);
+  border-radius: 50px;
+  text-align: center;
+  padding: 7px 25px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+.heroMainImage {
+  position: relative;
+  height: 310px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroBottomImagesContainer {
+  display: flex;
+  gap: 7px;
+  padding-top: 10px;
+}
+
+.heroBottomImages {
+  display: flex;
+  gap: 7px;
+  flex-direction: row;
+  flex: 3;
+}
+
+.heroBottomImage {
+  flex: 1;
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.heroBottomLastImage {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  flex: 1;
+}
+
+@media screen and (max-width: 728px) {
+  .arrow {
+    font-size: 40px;
+  }
+  .close {
+    padding: 10px;
+  }
+  .imageSection {
+    display: none;
+  }
+  .mobileSlider {
+    display: block;
+  }
+  .heroMainImageFlag{
+    display: none;
+  }
+  .imgContainer {
+    position: relative;
+    flex: 10;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+  }
+}

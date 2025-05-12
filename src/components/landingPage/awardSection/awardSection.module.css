@@ -1,0 +1,73 @@
+.heading {
+  font-size: 29.53px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--primary);
+}
+
+.subHeading {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--black-color);
+}
+
+.awardContainer {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.awardItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  gap: 20px;
+}
+
+.awardImageContainer {
+  height: 115px;
+  width: 130px;
+  position: relative;
+}
+
+.awardLabel {
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+.awardSubLabel {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .awardContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .subHeading {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .subHeading {
+    font-size: 38px;
+  }
+  .awardContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .awardItems {
+    width: 324px;
+  }
+}

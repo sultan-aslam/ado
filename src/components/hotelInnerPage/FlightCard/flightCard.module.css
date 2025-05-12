@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  gap: 5px;
+  padding: 0px 20px 20px 20px;
+  cursor: pointer;
+  border: 1px solid gray;
+  transition: border-color 0.3s ease;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.outward {
+  margin: 10px 0;
+  background-color: #f15a24;
+  color: white;
+  font-size: 16px;
+   width: 40px;
+   padding-left: 11px;
+   padding-top: 8px;
+  height: 40px; 
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.depName {
+  font-size: 18.41px;
+  line-height: 21.07px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #028e00;
+  margin: 10px 0;
+  font-size: 18.41px;
+  font-weight: 600;
+}
+
+.locationDiv {
+  color: #028e00;
+  font-size: 18.41px;
+  font-weight: 600;
+}
+
+.con {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.div1 {
+  gap: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.div2 {
+  gap: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.containerSelected {
+  height: 30px !important;
+  width: 100%;
+  background-color: #f15b24;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  padding: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  align-items: center;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  margin-top: 18px;
+}
+
+.flight {
+  width: 85%;
+}
+
+.tags {
+  width: 15%;
+  margin-top: 5px;
+  /* margin-left: -100px; */
+}
+
+.tag1 {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #d8ebe8;
+  color: #255d53;
+}
+
+.tag2 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  background-color: #ffe2d4;
+  color: #994317;
+}
+
+.selected {
+  border: 2px solid var(--primary);
+  /* Adjust the border color as needed */
+}
+
+@media screen and (max-width: 420px) {
+  .con {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ 
+  .radio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 65px;
+  }
+
+  .tags {
+    position: absolute;
+    right: 0px;
+    width: 85px;
+  }
+
+  .flight {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: border-color 0.3s ease;
+    position: relative;
+  }
+
+  .tag1 {
+    font-size: 8px;
+    font-weight: 600;
+    background-color: #d8ebe8;
+    color: #255d53;
+  }
+  .tag2 {
+    font-size: 8px;
+    font-weight: 600;
+    background-color: #ffe2d4;
+    color: #994317;
+  }
+}

@@ -1,0 +1,26 @@
+.minusContainer {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  /* margin-left: -5px; */
+}
+
+.plusContainer {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  /* margin-left: -5px; */
+}
+
+.commonStyle {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.commonStyleLeft {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}

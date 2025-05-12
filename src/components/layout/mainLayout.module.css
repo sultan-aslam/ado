@@ -1,0 +1,28 @@
+.navContainer {
+  overflow: unset;
+  /* position: sticky; */
+  top: 0;
+  /* width: 100% !important; */
+  z-index: 1000;
+  background-color: #fff;
+  /* box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.2); */
+}
+
+.footerContainer {
+  background-color: #f8f8f8;
+  margin-top: 50px;
+}
+
+.nonSticky {
+  position: static;
+}
+
+.breadcrumb {
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 728px) {
+  .navContainer {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 12px 0px;
+  }
+}

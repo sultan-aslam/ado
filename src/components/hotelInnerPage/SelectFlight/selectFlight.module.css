@@ -1,0 +1,246 @@
+/* Add this to your existing CSS file or update the existing rules */
+
+/* Container adjustments */
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+.filterConatiner{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+}
+.skeletonClass{
+  padding: 30px 0 !important;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.filterContainer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+  .filterContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Flights adjustments */
+.flights {
+  width: 100%;
+  padding: 5px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  .flights {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Flight Card adjustments */
+.flightCard {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .flightCard {
+    width: 100%;
+  }
+}
+
+/* Title adjustments */
+.flightsTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.optionRange {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.alternateFlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.alternateFlightDescription {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 0px;
+}
+
+/* Filter adjustments */
+.filter :global(.ant-select) {
+  padding-left: 20px !important;
+  width: 100% !important;
+  border: 1px solid gray !important;
+  border-radius: 4px !important;
+}
+
+.select,
+.ant-select-selection-selector,
+.ant-select-selection-item {
+  padding-left: 20px !important;
+  width: 100% !important;
+  border: 1px solid gray !important;
+  border-radius: 4px !important;
+}
+
+.filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterHeading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .filter {
+    width: 100%;
+  }
+}
+
+/* Miscellaneous */
+.filterChecked {
+  border-radius: 2px !important;
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  padding-inline: 5px !important;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.filterChecked::before {
+  background-color: transparent !important;
+}
+
+.filterChecked :global(.ant-radio-button-checked) {
+  background-color: var(--primary);
+}
+
+.showMore {
+  font-size: 14px;
+  font-weight: 400;
+  color: #51ccf5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonGroup {
+  padding: 5px;
+  background-color: var(--tertiary);
+  display: flex;
+}
+
+.buttonA {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  color: inherit;
+  padding-left: 10px;
+}
+
+.buttonB {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.noStops {
+  display: flex;
+  gap: 5px;
+  font-size: 15.96px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+@media screen and (max-width: 1300px) {
+  .filterContainer {
+    width: 230px;
+  }
+
+  .buttonA,
+  .buttonB {
+    gap: 2px;
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filterContainer {
+    width: 100%;
+    border: none;
+  }
+  .buttonA {
+    padding-left: 0px;
+  }
+  .filterChecked {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 120px;
+  padding: 10px;
+}
+
+.selected-card {
+  border: 2px solid #007bff;
+  background-color: #eaf5ff;
+}

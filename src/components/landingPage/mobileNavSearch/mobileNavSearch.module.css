@@ -1,0 +1,38 @@
+.satisfiedCustomer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #59c871;
+  margin: 15px 0px;
+}
+
+.titleCustomer {
+  align-content: center;
+}
+
+.border {
+  border: 3px solid #e3e3e3;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .satisfiedCustomer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    font-weight: 500;
+    color: #59c871;
+    margin: 15px 0px;
+  }
+}
+
+/* @media screen and (min-width: 376px) and (max-width: 425) {
+  .satisfiedCustomer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 400;
+    color: #59c871;
+    margin: 15px 0px;
+  }
+} */

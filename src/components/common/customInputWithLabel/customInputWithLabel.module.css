@@ -1,0 +1,71 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  top: -13px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #999;
+  z-index: 100;
+}
+
+.labelMobileFilters {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8c8a9e !important;
+  z-index: 1;
+}
+
+.inputWrapper :global(.ant-input-outlined:focus) {
+  position: absolute;
+  top: -30px;
+  border-color: #8c8a9e !important;
+}
+
+.inputWrapper :global(.ant-input-outlined:focus-within) {
+  border-color: #ced4da !important;
+  border: 1px solid #ced4da;
+}
+
+.inputWrapper :global(.ant-input-outlined:hover) {
+  z-index: inherit;
+}
+
+.input :global(.ant-input::placeholder) {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: black !important;
+}
+
+.input :global(.ant-input:placeholder-shown) {
+  font-size: 16px;
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.input {
+  width: 100%;
+  border-radius: 25px !important;
+}
+
+.input:hover {
+  border-color: #8c8a9e !important;
+}
+
+.input:focus {
+  border-color: #8c8a9e !important;
+}
+
+.input::placeholder {
+  font-size: 16px;
+}

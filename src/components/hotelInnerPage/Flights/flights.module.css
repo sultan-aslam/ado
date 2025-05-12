@@ -1,0 +1,232 @@
+.flightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  height: 70px;
+  padding: 0 20px;
+  gap: 20px;
+  /* justify-content: space-between; */
+}
+
+.imageContainer {
+  display: flex;
+  margin-top: 12px;
+}
+
+.secondFlight .imageContainer {
+  /* Align the image to the right side */
+  order: 2; /* This will move the image to the right */
+}
+.flights {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+/* .flight { */
+/* display: flex;
+  flex-direction: column;
+  /* padding: 5px; */
+/* justify-content: center;
+  align-items: center; */
+/* } */
+.flight {
+  margin: 0 50px;
+}
+@media screen and (max-width: 600px) {
+  .flight {
+    margin: 0;
+  }
+}
+.timingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.airport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0px;
+}
+.timing {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  width: 100%;
+}
+
+.takeOfTime {
+  font-size: 15.43px;
+  font-weight: 600;
+  line-height: 25.54px;
+  text-align: right;
+  color: #4a4a4a;
+}
+
+.landingTime {
+  font-size: 15.56px;
+  font-weight: 600;
+  line-height: 25.54px;
+  color: #4a4a4a;
+}
+
+.heen {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #f15a24;
+  /* border-bottom: 1.06px solid #DBDBDB; */
+}
+
+.lineHeen {
+  width: 90px;
+  margin-top: 2px;
+  height: 1px;
+  background-color: #dbdbdb;
+  border: none;
+}
+
+.directFlight {
+  font-size: 12px;
+  font-weight: 600;
+  color: #028e00;
+  text-align: center;
+
+  /* width: 100px;
+    margin-top: 2px;
+    color: #dbdbdb; */
+}
+
+.lineDirectFlight {
+  width: 170px;
+  margin-top: 5px;
+  height: 1px;
+  background-color: #dbdbdb;
+  border: none;
+}
+.airports {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.airline {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+  margin-top: 5px;
+}
+
+.flightNumber {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+  margin-top: 5px;
+}
+
+.airlineContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 15px;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.divider {
+  width: 1px;
+  background-color: #dbdbdb;
+  border: none;
+  margin: 10px 20px 10px 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .takeOfTime {
+    font-size: 10px;
+    font-weight: 600;
+    color: #4a4a4a;
+  }
+  .wrapper {
+    display: flex;
+    height: 70px;
+    gap: 2px;
+  }
+  .airports {
+    font-size: 10px;
+    font-weight: 400;
+    color: #4a4a4a;
+  }
+  .heen {
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    color: #f15a24;
+  }
+  .lineHeen {
+    width: 40px;
+    margin-top: 2px;
+    color: #dbdbdb;
+    border: none;
+    height: 1px;
+  }
+  .landingTime {
+    font-size: 10px;
+    font-weight: 600;
+    color: #4a4a4a;
+    align-content: center;
+  }
+  .timing {
+    display: flex;
+    justify-content: unset !important;
+    gap: 10px !important;
+    width: 100%;
+  }
+  .directFlight {
+    font-size: 8px;
+    font-weight: 600;
+    color: #028e00;
+    text-align: center;
+  }
+  .lineDirectFlight {
+    width: 100px;
+    margin-top: 5px;
+    height: 0.2px !important;
+    background-color: #fffdfd;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flights {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+  .divider {
+    color: #dbdbdb;
+    margin: 5px 0px;
+  }
+  .imageContainer {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .flights {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,22 @@
+.filter {
+  width: 100%;
+}
+
+.filter
+  :global(.ant-collapse-item .ant-collapse-content .ant-collapse-content-box) {
+  padding: 0px !important;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.selectedOption{
+  padding: 10px !important;
+}
+.filterHeading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}

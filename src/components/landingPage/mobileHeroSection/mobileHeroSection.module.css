@@ -1,0 +1,197 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.heroHeadings {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 60%;
+  gap: 60px;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.headingsWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.discountMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  width: 60px;
+  height: 60px;
+  font-size: 10px;
+  border-radius: 50px;
+  background-color: #f15a24;
+  color: white;
+}
+
+.discount {
+  font-size: 10px;
+  text-align: center;
+}
+
+.actionButton {
+  margin-top: -50px;
+}
+
+.discountAndHeadings {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: self-start;
+  width: 100%;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.opening {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--black-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+}
+.location {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--black-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.openingWrapper {
+  position: relative;
+}
+
+.borderBottom {
+  position: absolute;
+  width: 80%;
+  border-bottom: 5px solid #ffd205;
+  bottom: -1px;
+  z-index: -1;
+}
+
+.section1Image {
+  position: relative;
+  height: 350px;
+}
+.textContainer {
+  margin-top: 50px;
+}
+
+.name,
+.places {
+  font-size: 12.22px;
+  font-weight: 400;
+  color: #a3a3a3;
+  text-align: center;
+}
+.places {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.button {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  top: 33%;
+  right: 0px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.next {
+  height: 62px;
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  top: 33%;
+  right: 0px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.prev {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  position: absolute;
+  padding: 8px;
+  top: 33%;
+  left: 4px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .opening,
+  .location {
+    font-size: 18px;
+  }
+  .discountMobile {
+    width: 55px;
+    height: 55px;
+    align-self: flex-start;
+  }
+  .discount {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .opening,
+  .location {
+    font-size: 20px;
+
+  }
+  .discountMobile {
+    width: 60px;
+    height: 60px;
+    align-self: flex-start;
+  }
+  .discount {
+    font-size: 10px;
+  }
+}

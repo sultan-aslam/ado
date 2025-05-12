@@ -1,0 +1,150 @@
+.topNavbarContainer {
+  height: 30px;
+  border-bottom: 1px solid var(--text-color);
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+}
+
+.ratingContainer {
+  border-left: 1px solid var(--text-color);
+  color: var(--primary);
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.text {
+  color: #000000;
+  margin-left: 5px;
+  font-size: 11px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.rating {
+  color: var(--primary);
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.rating :global(.ant-rate) {
+  font-size: 10px !important;
+}
+
+.rating :global(.ant-rate-star) {
+  background-color: var(--primary);
+  color: white;
+  margin-inline-end: 2px !important
+}
+
+.payments {
+  padding: 0 20px;
+  border-left: 1px solid var(--text-color);
+}
+
+.links {
+  padding: 0 20px;
+  border-left: 1px solid var(--text-color);
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 11.2px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 1024px) {
+  .link {
+    font-size: 12px;
+  }
+
+  .rating {
+    /* font-size: 112px; */
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .topNavbarContainer {
+    display: none;
+  }
+}
+
+
+.contactContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contactLinks {
+  font-size: 18px;
+}
+
+.contactLink,
+.whatsappLink {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.whatsappLink:hover {
+  text-decoration: underline;
+}
+
+/* Overlay Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  z-index: 11101 !important;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.overlayContent ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.closeButton {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+  border: 1px solid #00aa25 !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.closeButton:hover {
+  transition: 0.3s all linear;
+  background-color: #00aa25;
+  color: white;
+}

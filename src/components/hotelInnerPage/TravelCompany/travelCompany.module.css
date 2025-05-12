@@ -1,0 +1,300 @@
+.containerRooms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.passengers {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 140px;
+  width: -webkit-fill-available;
+}
+
+.roomWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.modalHeader {
+  text-align: center;
+}
+.modalHeader h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.warningAlert {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.loginBtn {
+  width: 85%;
+  gap: 10px;
+  border-radius: 4px;
+  margin: auto;
+}
+.selectFixedWidth {
+  width: 200px;
+}
+
+.childAgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.childAgeSelect {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8px);
+}
+
+.wrapperRooms {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 45px;
+  right: 12px;
+  width: -webkit-fill-available;
+  border-radius: 5px;
+}
+
+.modalCotainer :global(.ant-modal .ant-modal-content) {
+  padding: 0px !important;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.adultsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.adultsTitle {
+  font-size: 16.23px;
+  font-weight: 600;
+  color: #4a4a4a;
+  align-content: center;
+}
+
+.childrensContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.ageRange {
+  font-size: 14.43px;
+  font-weight: 400;
+}
+
+.doneBtn {
+  font-size: 14px;
+  font-weight: 700;
+  height: 36px;
+  margin-top: 15px;
+}
+.bgColor{
+  background-color: #00aa25 !important;
+}
+.childAgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.tooltipContainer {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 210px;
+  width: 430px !important;
+  @media screen and (min-width: 1094px) and (max-width: 1214px) {
+    right: 0px;
+  }
+}
+.activeTooltip{
+  top: 45px !important;
+  left: 0 !important;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.applyFilters {
+  display: flex;
+  gap: 10px;
+}
+
+.clearAll {
+  align-self: center;
+  text-decoration: underline;
+  font-size: 16.36px;
+  font-weight: 400;
+  color: #808080;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 16.23px;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.apply {
+  font-weight: 700;
+}
+
+.typeTitle {
+  font-size: 16.23px;
+  font-weight: 600;
+  color: #4a4a4a;
+  align-content: center;
+  margin: 15px 0px 10px;
+}
+
+.datesContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.noOfRoomsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.minus {
+  border: 1px solid #01b6ca !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.plus {
+  align-content: center;
+  background: #f15a24 !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.plusHome {
+  align-content: center;
+  background-color: #00aa25 !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.arrowUp {
+  align-content: center;
+  background: #f15a24 !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.arrowUpHome{
+  align-content: center;
+  background-color: #00aa25 !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.arrowDown {
+  align-content: center;
+  background: white !important;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 13px;
+}
+
+@media (width <= 600px) {
+  .tooltipContainer {
+    position: unset;
+    border: unset;
+    box-shadow: unset;
+    z-index: 1000;
+    background-color: white;
+    padding: unset;
+    top: 140px;
+    width: 100% !important;
+  }
+  .passengers {
+    width: 100%;
+  }
+  .noOfRoomsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .adultsContainer {
+    flex-direction: column;
+  }
+  .selectFixedWidth {
+    width: 100%;
+  }
+  .childrensContainer {
+    flex-direction: column;
+    margin-top: 0px !important;
+  }
+  .wrapper {
+    position: unset;
+    padding: 0px !important;
+    border: unset;
+    box-shadow: unset;
+  }
+  .container {
+    padding: unset;
+  }
+  .doneBtn {
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,66 @@
+.selectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #8c8a9e;
+  z-index: 99;
+}
+
+.landingPageLabel {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #8c8a9e;
+  font-weight: 400;
+  z-index: 99;
+}
+
+.hiddenDropdown {
+  display: none !important;
+}
+
+.selectWrapper :global(.ant-select-selection-placeholder) {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #000000 !important;
+}
+
+.mobileLandingSelect :global(.ant-select-selection-placeholder) {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #000000 !important;
+}
+
+.selectWrapper :global(.ant-select-selector) {
+  border: 1px solid #ced4da !important;
+  border-radius: 25px !important;
+}
+
+.selectWrapperDestination :global(.ant-select-selector) {
+  border: 1px solid red !important;
+  border-radius: 0px !important;
+}
+
+.select {
+  width: 100%;
+}
+.selectDestination {
+  width: 100%;
+}
+.selectDestination > div:first-child {
+  border-radius: 0px !important;
+}
+.select > div:first-child {
+  border-radius: 25px !important;
+}

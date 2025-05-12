@@ -1,0 +1,182 @@
+.filterContainer {
+  display: flex;
+  border-radius: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.filter {
+  display: flex;
+  border-radius: 50px;
+  width: 200px;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.filterAirport {
+  display: flex;
+  border-radius: 50px;
+  width: 200px;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+}
+
+.filterHeading {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25.54px;
+  color: #4a4a4a;
+}
+
+.calenderIcon {
+  margin-top: 2px;
+}
+
+.modalCotainer :global(.ant-modal .ant-modal-content) {
+  padding: 0px !important;
+}
+
+.countrySelectContainer {
+  position: relative;
+}
+
+.airportDropdown {
+  position: absolute;
+  top: 80px;
+  left: 180px;
+  margin-left: 10px;
+  z-index: 100000;
+}
+
+.airportList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+.fweight {
+  font-weight: 600 !important;
+}
+.placeholder {
+  font-size: 16px !important;
+  font-weight: 600;
+  font-family: var(--font-poppins), sans-serif;
+}
+.airportList li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.airportList li:hover {
+  background-color: #f0f0f0;
+}
+
+.selectedAirport {
+  background-color: #e6f7ff;
+}
+
+.selectedAirportDisplay {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+    background: #f15a241a;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e1e1e;
+    padding: 5px;
+  }
+
+  .Pakket {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .Alleen {
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .filter {
+    display: flex;
+    border-radius: 50px;
+    width: fit-content;
+    /* width: 260px; */
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .filterContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    padding: 10px;
+  }
+  .filter {
+    display: flex;
+    border-radius: 50px;
+    /* width: fit-content */
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .airportDropdown {
+    top: 75px;
+    left: 5px;
+    z-index: 2147483649 !important;
+    width: 100%;
+  }
+  .filterAirport {
+    width: 100%;
+  }
+  .airportList {
+    width: 95%;
+  }
+}
+.countryOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.disabled {
+  color: #1e1e1e !important;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.airportList li:hover {
+  background-color: #f0f0f0;
+}
+
+.disabled:hover {
+  background-color: transparent;
+}
+.tagTitleChip {
+  background-color: #ffa500;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 12px;
+  font-size: 8px;
+}
+.countryOption:nth-child(2) .tag {
+  background-color: #ff8000;
+}

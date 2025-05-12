@@ -1,0 +1,199 @@
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.leftLinks {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.singleRow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.linkHeading {
+  margin-bottom: 10px;
+}
+
+.doubleRow {
+  flex: 2;
+}
+
+.socialIcons > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.socialIcons > svg:hover {
+  color: var(--primary);
+}
+
+.both {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bothLinks {
+  flex: 1;
+}
+
+.rightInfo {
+  flex: 1;
+}
+
+.links {
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.links:hover {
+  color: var(--primary);
+}
+
+.footerDescription {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.contactContainer {
+  margin-top: 20px;
+}
+
+.phone {
+  color: var(--primary);
+  font-size: 20px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.email {
+  margin-top: 2px;
+}
+
+.socialIcons {
+  margin-top: 20px;
+  font-size: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.socialIcons > *:hover {
+  color: var(--primary);
+}
+
+.bContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.bImageContainer {
+  position: relative;
+  width: 170px;
+  height: 50px;
+}
+
+.bCopyright {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upArrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.upArrow:hover {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 1024px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .footerDescription {
+    width: 70%;
+  }
+
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .footerContainer {
+    gap: 50px;
+  }
+  .leftLinks {
+    flex-wrap: wrap;
+  }
+  .singleRow {
+    order: 1;
+  }
+
+  .doubleRow {
+    order: 2;
+  }
+  .footerDescription {
+    width: 90%;
+  }
+  .phone {
+    font-size: 16px;
+  }
+
+  .email {
+    font-size: 12px;
+  }
+
+  .socialIcons {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .linksContainer {
+    flex-direction: column;
+    gap: 0px !important;
+  }
+  .bContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .bCopyright {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

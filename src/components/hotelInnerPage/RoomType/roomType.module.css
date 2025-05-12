@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.47999998927116394px;
+  text-align: left;
+  margin-top: 21px;
+  color: #1e1e1e;
+}
+.containerLoader{
+  padding: 30px 0 !important;
+}
+
+.roomType {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.icon {
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+.line {
+  border: 1px solid var(--primary);
+  margin-top: 21px;
+  width: 100%;
+}
+
+.roomTitle {
+  font-size: 22.5px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  color: #1e1e1e;
+  margin: 20px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,13 @@
+.filter {
+  width: 100%;
+}
+.filter
+  :global(.ant-collapse-item .ant-collapse-content .ant-collapse-content-box) {
+  padding: 0px !important;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

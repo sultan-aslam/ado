@@ -1,0 +1,30 @@
+.container {
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  height: 180px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  top: 30px;
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+  margin: 7px 0px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.15000000596046448px;
+  color: #000000;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #f2f2f2;
+  width: 100px;
+}

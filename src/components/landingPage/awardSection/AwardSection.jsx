@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from './awardSection.module.css';
 import Award2022 from '../../../../public/images/Untitled-3.png';
-import Award1 from '../../../../public/images/Award1.png';
 import Award2 from '../../../../public/images/Award2.png';
 import Award3 from '../../../../public/images/Award3.png';
 import Award4 from '../../../../public/images/Award4.png';

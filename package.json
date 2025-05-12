@@ -15,7 +15,7 @@
     "antd": "^5.15.1",
     "axios": "^1.6.7",
     "dayjs": "^1.11.10",
-    "html-react-parser": "^5.1.10",
+    "html-react-parser": "^5.2.2",
     "mapbox-gl": "^3.12.0",
     "next": "15.3.2",
     "next-sitemap": "^4.2.3",
